@@ -7,13 +7,15 @@ const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
+const config = require('./config.json')
+
 gulp.task('clean', function() {
   return del(['dist']);
 });
 
 gulp.task('pug', function() {
-  return gulp.src('src/components/**/*.pug')
-    .pipe(pug())
+  return gulp.src('src/index.pug')
+    .pipe(pug({ data: config }))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });

@@ -1,0 +1,19 @@
+{
+    "site": {
+        "head_title": "nixgnauhcuy's homepage",
+        "title": "nixgnauhcuy",
+        "subtitle": "Life-long learning",
+        "description": "nixgnauhcuy's homepage",
+        "author": "nixgnauhcuy",
+        "keywords": ["nixgnauhcuy", "homepage"],
+        "language": "en-US",
+        "favicon": "/assets/favicon.png"
+    },
+    "config": {
+        "avatar": {
+            "link": "/assets/avatar.png",
+            "height": "100",
+            "width": "100"
+        }
+    }
+}

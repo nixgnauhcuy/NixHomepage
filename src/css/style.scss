@@ -1,7 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  h1 {
-    color: #333;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+}
+
+.left-column, .right-column {
+  padding: 20px;
+}
+
+.left-column {
+  flex: 1;
+  text-align: center;
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.right-column {
+  flex: 2;
+}

@@ -6,6 +6,7 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const imagemin = require('gulp-imagemin')
 
 const config = require('./config.json')
 
@@ -32,16 +33,16 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
   return gulp.src('src/js/**/*.js')
     .pipe(sourcemaps.init())
-    .pipe(concat('index.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream());
 });
 
-gulp.task('images', function() {
-  return gulp.src('src/assets/**/*')
+gulp.task('assets', function() {
+  return gulp.src('src/assets/**/*', {encoding: false})
     .pipe(gulp.dest('dist/assets'))
+    .pipe(imagemin())
     .pipe(browserSync.stream());
 });
 
@@ -54,7 +55,7 @@ gulp.task('watch', function() {
   gulp.watch('src/components/**/*.pug', gulp.series('pug'));
   gulp.watch('src/css/**/*.scss', gulp.series('sass'));
   gulp.watch('src/js/**/*.js', gulp.series('js'));
-  gulp.watch('src/assets/**/*', gulp.series('images'));
+  gulp.watch('src/assets/**/*', gulp.series('assets'));
 });
 
-gulp.task('default', gulp.series('clean', gulp.parallel('pug', 'sass', 'js', 'images'), 'watch'));
+gulp.task('default', gulp.series('clean', gulp.parallel('pug', 'sass', 'js', 'assets'), 'watch'));

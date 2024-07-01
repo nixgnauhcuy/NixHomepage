@@ -1,6 +1,17 @@
 main
-  h1 Nixgnauhcuy
-
+  .main-left
+    .avatar_img(style=`background-image: url(${config.avatar.link})`)
+  .main-right
+    header
+      .title #{config.left.title}
+      .subtitle #{config.left.subtitle}
+      .social-icons
+        a.social-icon(href="https://github.com/nixgnauhcuy" rel="external nofollow noreferrer" target="_blank" title="Github")
+          i.social-icon-img: img(src="assets/icon-github.svg" alt="Github Icon")
+        a.social-icon(href="https://nixgnauhcuy.cn/atom.xml" rel="external nofollow noreferrer" target="_blank" title="Rss")
+          i.social-icon-img: img(src="assets/icon-rss.svg" alt="Rss Icon")
+      .github_snake
+        img(src='https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake-dark.svg', alt='github contribution grid')
 canvas
 <script src='https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js'></script>
 <script src="/js/script.js"></script>

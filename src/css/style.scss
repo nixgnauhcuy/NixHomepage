@@ -1,25 +1,113 @@
 body {
-  display: inline-block;
-  font-family: Arial, sans-serif;
-}
-
-.main{
-  position:relative;
-  display:inline-block;
-  align-items: center;
-  text-align: center;
-  z-index:1;
-}
-
-h1,p{
-  color:#fff;
-  display:inline-block;
-}
-
-canvas{
   width: 100%;
   height: 100%;
-  position:fixed;
-  inset:0;
-  z-index:-1;
+  display: flex;
+  position: relative;
+  font-family: Roboto;
+  color: var(--base-font-color);
+  background-color: var(--base-background-color);
+  margin-top: 100px;
+}
+
+main {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-left {
+  overflow-y: scroll;
+  width: 230px;
+  height: 100vh;
+  display: flex;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-left::-webkit-scrollbar {
+  display: none;
+}
+
+.main-left .avatar_img {
+  width: 90%;
+  position: relative;
+  aspect-ratio: 1/1;
+  margin-top: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  background-color: #F1F1F1;
+  transform: scale(0.9);
+}
+
+.main-right {
+  width: calc(100% - 230px);
+  display: flex;
+  padding: 20px;
+  position: relative;
+  padding-bottom: 50px;
+  flex-direction: column;
+}
+
+.main-right .title {
+  font-size: 50px;
+}
+
+.main-right .subtitle {
+  font-size: 60px;
+}
+
+.main-right .social-icons {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.main-right .social-icons::-webkit-scrollbar {
+  display: none;
+}
+
+.main-right .social-icon {
+  width: 40px;
+  height: 35px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  margin-left: 10px;
+  background: var(--social-icon-color);
+  align-items: center;
+  justify-content: center;
+  transition: all 1s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+}
+
+.main-right .social-icon:hover {
+  width: 80px;
+  background: var(--social-icon-color);
+}
+
+.main-right .social-icon-img img{
+  margin-top: 3px;
+  transform: scale(0.4);
+}
+
+.main-right .social-icon:hover .iconTip {
+  display: block;
+}
+
+.main-right .github_snake {
+  width: 50%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
 }

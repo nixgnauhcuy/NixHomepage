@@ -11,9 +11,14 @@
     },
     "config": {
         "avatar": {
-            "link": "/assets/avatar.png",
-            "height": "100",
-            "width": "100"
+            "link": "/assets/avatar.png"
+        },
+        "left": {
+            "title": "Hi, I'm nixgnauhcuy 👋",
+            "subtitle": "This is my personal site."
+        },
+        "right": {
+
         }
     }
 }

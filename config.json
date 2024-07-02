@@ -10,15 +10,109 @@
         "favicon": "/assets/favicon.png"
     },
     "config": {
-        "avatar": {
-            "link": "/assets/avatar.png"
-        },
         "left": {
-            "title": "Hi, I'm nixgnauhcuy 👋",
-            "subtitle": "This is my personal site."
+            "avatar": {
+                "link": "/assets/avatar.png"
+            },
+            "author_tag": {
+                "tag1": "Daydreamer🤡",
+                "tag2": "Procrastinator💤"
+            },
+            "about_me": "Life-long learning",
+            "author_infos": [
+                "📫 nixgnauhcuy@gmail.com",
+                "🏠 ShenZhen, China",
+                "💼 Embedded Software Engineer",
+                "🌝 MBTI, INTP-T"
+            ]
         },
         "right": {
-
+            "title": "Hi, I'm nixgnauhcuy 👋",
+            "subtitle": "This is my personal site.",
+            "social_icons": [
+                {
+                    "href": "https://www.nixgnauhcuy.cn",
+                    "title": "Blog",
+                    "img_src": "assets/icon-blog.svg",
+                    "img_alt": "Blog Icon"
+                },
+                {
+                    "href": "https://github.com/nixgnauhcuy",
+                    "title": "Github",
+                    "img_src": "assets/icon-github.svg",
+                    "img_alt": "Github Icon"
+                },
+                {
+                    "href": "https://nixgnauhcuy.cn/atom.xml",
+                    "title": "Rss",
+                    "img_src": "assets/icon-rss.svg",
+                    "img_alt": "Rss Icon"
+                }
+            ],
+            "blog_archives": {
+                "en": true,
+                "list": [
+                    {
+                        "title": "记录 axf 转 bin python 脚本笔记",
+                        "date": "2024-06-21",
+                        "url": "https://www.nixgnauhcuy.cn/60a5dd23b536/"
+                    },
+                    {
+                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（四）",
+                        "date": "2024-06-17",
+                        "url": "https://www.nixgnauhcuy.cn/423b1931ce58/"
+                    },
+                    {
+                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（三）",
+                        "date": "2024-06-14",
+                        "url": "https://www.nixgnauhcuy.cn/a0c7dce1d4fa/"
+                    },
+                    {
+                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（二）",
+                        "date": "2024-06-13",
+                        "url": "https://www.nixgnauhcuy.cn/f1b80f317887/"
+                    }
+                ]
+            },
+            "github": {
+                "en": true,
+                "repositories": [
+                    {
+                        "name": "QtComMate",
+                        "description": "Simple Serial Port Tool Based on pyqt6.",
+                        "url": "https://github.com/nixgnauhcuy/QtComMate"
+                    },
+                    {
+                        "name": "QCustomPlot_Pyqt_Study",
+                        "description": "Implement the QCustomPlot Demo using PyQt.",
+                        "url": "https://github.com/nixgnauhcuy/QCustomPlot_Pyqt_Study"
+                    },
+                    {
+                        "name": "WechatImgDatDecodeQt",
+                        "description": "Wechat Image .dat Decoder Based on PyQt6.",
+                        "url": "https://github.com/nixgnauhcuy/WechatImgDatDecodeQt"
+                    },
+                    {
+                        "name": "nxp-uuu-qt-tool",
+                        "description": "Gui tool based on mfgtools uuu.",
+                        "url": "https://github.com/nixgnauhcuy/nxp-uuu-qt-tool"
+                    },
+                    {
+                        "name": "python_script",
+                        "description": "Package some personal Python scripts into an executable file for use..",
+                        "url": "https://github.com/nixgnauhcuy/python_script"
+                    },
+                    {
+                        "name": "TrayCPUTool",
+                        "description": "Implemented in C# that updates the animation speed of the bottom system tray based on the current CPU usage.",
+                        "url": "https://github.com/nixgnauhcuy/TrayCPUTool"
+                    }
+                ]
+            },
+            "github_snake": {
+                "en": true,
+                "img": "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg"
+            }
         }
     }
 }

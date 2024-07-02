@@ -1,12 +1,22 @@
 body {
-  width: 100%;
-  height: 100%;
   display: flex;
   position: relative;
   font-family: Roboto;
   color: var(--base-font-color);
   background-color: var(--base-background-color);
   margin-top: 100px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 main {
@@ -17,9 +27,9 @@ main {
 }
 
 .main-left {
-  overflow-y: scroll;
-  width: 230px;
   height: 100vh;
+  overflow-y: scroll;
+  width: 40%;
   display: flex;
   padding: 0 15px;
   position: sticky;
@@ -34,18 +44,55 @@ main {
 }
 
 .main-left .avatar_img {
-  width: 90%;
+  width: 45%;
   position: relative;
   aspect-ratio: 1/1;
   margin-top: 50px;
   background-size: cover;
   border-radius: 50%;
-  background-color: #F1F1F1;
+  background-color: var(--white-background-color);
   transform: scale(0.9);
 }
 
+.main-left .about-me {
+  margin-top: -6px;
+  font-size: 20px;
+}
+
+.main-left .author-tag1 {
+  position: absolute;
+  right: -60px;
+  bottom: 35px;
+  background: rgba(31, 31, 31, 0.7);
+  padding: 5px 10px;
+  border-radius: 40px; 
+  animation: float 2s infinite;
+}
+
+.main-left .author-tag2 {
+  position: absolute;
+  right: -30px;
+  bottom: 0px;
+  background: rgba(31, 31, 31, 0.7);
+  padding: 5px 10px;
+  border-radius: 40px; 
+  animation: float 2s infinite;
+}
+
+.main-left .author-info {
+  margin-top: 10px;
+  padding: 15px;
+  background: rgba(31, 31, 31, 0.7);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.main-left .author-info p {
+  margin: 5px 0;
+}
+
 .main-right {
-  width: calc(100% - 230px);
+  width: calc(100% - 200px);
   display: flex;
   padding: 20px;
   position: relative;
@@ -62,7 +109,6 @@ main {
 }
 
 .main-right .social-icons {
-  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -100,8 +146,75 @@ main {
   display: block;
 }
 
-.main-right .github_snake {
-  width: 50%;
+.blog-archives-section .timeline {
+  width: 68%;
+  background: var(--base-background-color);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.blog-archives-section .timeline .timeline-item {
+  margin-bottom: 5px;
+  position: relative;
+  left: 25px;
+}
+
+.blog-archives-section .timeline .timeline-item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
+
+.blog-archives-section .timeline .timeline-item a {
+  margin: 0;
+  font-size: 18px;
+  color: #999;
+  text-decoration: none;
+}
+
+.main-right .github-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-right .github-cards .card {
+  width: calc(33.33% - 15px);
+  height: 100px;
+  background: var(--base-background-color);
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.main-right .github-cards .card a {
+  text-decoration: none;
+}
+
+.main-right .github-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.main-right .github-cards .card-title {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: var(--base-font-color);
+}
+
+.main-right .github-cards .card-description {
+  font-size: 1em;
+  color: #999;
+}
+
+.main-right .github-snake-img {
+  width: 70%;
+  height: auto;
+  display: block;
 }
 
 canvas {

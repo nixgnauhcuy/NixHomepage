@@ -146,35 +146,52 @@ main {
   display: block;
 }
 
-.blog-archives-section .timeline {
+.main-right .blog-archives-section .timeline {
+  overflow-y: scroll;
+  height: 170px;
   width: 68%;
   background: var(--base-background-color);
   padding: 15px;
   border-radius: 8px;
-}
-
-.blog-archives-section .timeline .timeline-item {
-  margin-bottom: 5px;
   position: relative;
-  left: 25px;
 }
 
-.blog-archives-section .timeline .timeline-item::before {
+.main-right .blog-archives-section .timeline::-webkit-scrollbar {
+  display: none;
+}
+
+.main-right .blog-archives-section .timeline .timeline-item {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.main-right .blog-archives-section .timeline .timeline-item::before {
   content: '';
   width: 10px;
   height: 10px;
   background: #ffffff;
+  border: 2px solid #999;
   border-radius: 50%;
   position: absolute;
-  left: -25px;
-  top: 10px;
+  left: -7px;
+  top: 7px;
 }
 
-.blog-archives-section .timeline .timeline-item a {
+.main-right .blog-archives-section .timeline .timeline-item a {
+  text-decoration: none;
+}
+
+.main-right .blog-archives-section .timeline .timeline-item a h3 {
   margin: 0;
   font-size: 18px;
   color: #999;
-  text-decoration: none;
+}
+
+.main-right .blog-archives-section .timeline .timeline-item a p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #999;
 }
 
 .main-right .github-cards {

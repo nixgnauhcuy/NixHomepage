@@ -1,6 +1,7 @@
 main
   .main-left
-    .avatar_img(style=`background-image: url(${config.left.avatar.link})`)
+    - var avatarImg = config.left.avatar.link || '/assets/avatar.png'
+    .avatar_img(style=`background-image: url(${avatarImg})`)
       span.author-tag1 #{config.left.author_tag.tag1}
       span.author-tag2 #{config.left.author_tag.tag2}
     .about-me
@@ -23,7 +24,8 @@ main
             each post in config.right.blog_archives.list
               .timeline-item
                 a(href=post.url target="_blank")
-                  h3= post.title + " " +post.date
+                  h3= post.title
+                  p= "📅 " + post.date
                 
       if config.right.github.en
         .github-section

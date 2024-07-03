@@ -12,7 +12,7 @@
     "config": {
         "left": {
             "avatar": {
-                "link": "/assets/avatar.png"
+                "link": "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/about/my.jpg"
             },
             "author_tag": {
                 "tag1": "Daydreamer🤡",
@@ -71,6 +71,16 @@
                         "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（二）",
                         "date": "2024-06-13",
                         "url": "https://www.nixgnauhcuy.cn/f1b80f317887/"
+                    },
+                    {
+                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（一）",
+                        "date": "2024-06-12",
+                        "url": "https://www.nixgnauhcuy.cn/8d34424033d0/"
+                    },
+                    {
+                        "title": "S32DS Build Command 技巧",
+                        "date": "2024-05-24",
+                        "url": "https://www.nixgnauhcuy.cn/42c8065d1ad6/"
                     }
                 ]
             },

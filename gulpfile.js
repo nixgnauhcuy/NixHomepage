@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 const browserSync = require('browser-sync').create();
@@ -58,4 +57,5 @@ gulp.task('watch', function() {
   gulp.watch('src/assets/**/*', gulp.series('assets'));
 });
 
-gulp.task('default', gulp.series('clean', gulp.parallel('pug', 'sass', 'js', 'assets'), 'watch'));
+gulp.task('default', gulp.series('clean', gulp.parallel('pug', 'sass', 'js', 'assets')));
+gulp.task('debug', gulp.series('clean', gulp.parallel('pug', 'sass', 'js', 'assets'), 'watch'));

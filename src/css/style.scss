@@ -241,3 +241,192 @@ canvas {
   inset: 0;
   z-index: -1;
 }
+
+@media (max-width: 1024px) {
+  body {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .main-left, .main-right {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: relative; 
+  }
+
+  .main-left .avatar_img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .main-left .author-tag1 {
+    font-size: 30px;
+    bottom: 80px;
+  }
+  
+  .main-left .author-tag2 {
+    font-size: 30px;
+  }
+
+  .main-left .about-me {
+    font-size: 50px;
+  }
+
+  .main-left .author-info {
+    font-size: 30px;
+  }
+
+  .main-right .title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .main-right .subtitle {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .main-right .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main-right .social-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .main-right .blog-archives-section h1 {
+    text-align: center;
+  }
+
+  .main-right .blog-archives-section .timeline {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .main-right .blog-archives-section .timeline .timeline-item a h3 {
+    font-size: 25px;
+  }
+
+  .main-right .blog-archives-section .timeline .timeline-item a p {
+    font-size: 20px;
+  }
+
+  .main-right .github-section h1 {
+    text-align: center;
+  }
+
+  .main-right .github-cards .card {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .main-right .github-snake-img {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+/* 适用于手机设备 */
+@media (max-width: 768px) {
+  .main-left .avatar_img {
+    width: 60%;
+  }
+
+  .main-left .author-tag1 {
+    font-size: 15px;
+    bottom: 35px;
+  }
+  
+  .main-left .author-tag2 {
+    font-size: 15px;
+  }
+
+  .main-left .about-me {
+    font-size: 25px;
+  }
+
+  .main-left .author-info {
+    font-size: 15px;
+  }
+
+  .main-right .title {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .main-right .subtitle {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .main-right .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main-right .social-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .main-right .blog-archives-section h1 {
+    text-align: center;
+  }
+
+  .main-right .blog-archives-section .timeline {
+    margin: auto;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .main-right .blog-archives-section .timeline .timeline-item a h3 {
+    font-size: 15px;
+  }
+
+  .main-right .blog-archives-section .timeline .timeline-item a p {
+    font-size: 10px;
+  }
+
+  .main-right .github-section h1 {
+    text-align: center;
+  }
+
+  .main-right .github-cards .card {
+    margin: auto;
+    width: 80%;
+    height: 60px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .main-right .github-cards .card-title {
+    font-size: 15px;
+  }
+
+  .main-right .github-cards .card-description {
+    font-size: 12px;
+  }
+
+  .main-right .github-snake-img {
+    margin: auto;
+    width: 80%;
+  }
+
+
+}

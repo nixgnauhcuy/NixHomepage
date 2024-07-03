@@ -42,9 +42,9 @@ Running the command `npm run debug` and then visiting `http://localhost:3000` wi
 
 ### windows
 
-| PC                                  | Phone                                        |
-| -------------------------------------- | ------------------------------------------- |
-|  |  |
+| PC                                  | Phone                                        | pad                                        |
+| -------------------------------------- | ------------------------------------------- | --- |
+| ![](/docs/img/pc.png) |  | |
 
 ## :mailbox_with_mail: Feedback and Contribution
 

@@ -3,7 +3,7 @@ body {
   position: relative;
   font-family: Roboto;
   color: var(--base-font-color);
-  background-color: var(--base-background-color);
+  background-color: #131313;
   margin-top: 100px;
 }
 
@@ -44,7 +44,7 @@ main {
 }
 
 .main-left .avatar_img {
-  width: 45%;
+  width: 85%;
   position: relative;
   aspect-ratio: 1/1;
   margin-top: 50px;
@@ -228,7 +228,7 @@ main {
 }
 
 .main-right .github-snake-img {
-  width: 70%;
+  width: 100%;
   height: auto;
   display: block;
 }

@@ -40,9 +40,19 @@ npm run debug
 
 ## :camera: 预览
 
-| PC                                  | Phone                                        |
-| -------------------------------------- | ------------------------------------------- |
-| ![](/docs/img/pc.png) |  |
+![](/docs/img/demo.gif)
+
+### PC
+
+![](/docs/img/pc.png)
+
+### Phone
+
+![](/docs/img/phone.png)
+
+### Pad
+
+![](/docs/img/pad.png)
 
 ## :mailbox_with_mail: 反馈与贡献
 

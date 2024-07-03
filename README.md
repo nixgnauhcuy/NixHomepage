@@ -40,11 +40,21 @@ Running the command `npm run debug` and then visiting `http://localhost:3000` wi
 
 ## :camera: Previews
 
+![](/docs/img/demo.gif)
+
 ### windows
 
-| PC                                  | Phone                                        | pad                                        |
-| -------------------------------------- | ------------------------------------------- | --- |
-| ![](/docs/img/pc.png) |  | |
+### PC
+
+![](/docs/img/pc.png)
+
+### Phone
+
+![](/docs/img/phone.png)
+
+### Pad
+
+![](/docs/img/pad.png)
 
 ## :mailbox_with_mail: Feedback and Contribution
 

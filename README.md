@@ -28,7 +28,7 @@ npm install
 npm run deploy
 ```
 
-Running the command `npm run deplo`y will generate a dist folder that contains the compiled code, which you can then deploy to your server.
+Running the command `npm run deploy` will generate a dist folder that contains the compiled code, which you can then deploy to your server.
 
 ### Debug
 
@@ -37,6 +37,10 @@ npm run debug
 ```
 
 Running the command `npm run debug` and then visiting `http://localhost:3000` will allow you to see the local debugging results.
+
+## :gear: Config
+
+Edit the `config.js` file to customize and modify the content to be displayed. It offers a high degree of flexibility, so feel free to explore.
 
 ## :camera: Previews
 

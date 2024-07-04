@@ -38,6 +38,10 @@ npm run debug
 
 运行命令 `npm run debug`，随后访问 `http://localhost:3000` 即可看到本地调试的效果。
 
+## :gear: 配置
+
+编辑 `config.js` 文件，可以自定义修改要展示的内容，自由度高，请自行探索。
+
 ## :camera: 预览
 
 ![](/docs/img/demo.gif)

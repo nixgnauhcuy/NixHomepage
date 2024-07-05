@@ -10,6 +10,7 @@
         "favicon": "/assets/favicon.png"
     },
     "config": {
+        "background_effect": true,
         "left": {
             "avatar": {
                 "link": "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/about/my.jpg"
@@ -19,7 +20,12 @@
                 "tag2": "Procrastinator💤"
             },
             "about_me": "Life-long learning",
-            "author_infos": [
+            "card_wechat": {
+                "en": true,
+                "front_img": "",
+                "back_img": ""
+            },
+            "card_author_infos": [
                 "📫 nixgnauhcuy@gmail.com",
                 "🏠 ShenZhen, China",
                 "💼 Embedded Software Engineer",
@@ -121,7 +127,7 @@
             },
             "github_snake": {
                 "en": true,
-                "img": "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg"
+                "img": ""
             }
         }
     }

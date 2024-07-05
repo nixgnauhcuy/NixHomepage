@@ -63,7 +63,7 @@ main {
   position: absolute;
   right: -60px;
   bottom: 35px;
-  background: rgba(31, 31, 31, 0.7);
+  background: var(--card-background-color);
   padding: 5px 10px;
   border-radius: 40px; 
   animation: float 2s infinite;
@@ -73,22 +73,54 @@ main {
   position: absolute;
   right: -30px;
   bottom: 0px;
-  background: rgba(31, 31, 31, 0.7);
+  background: var(--card-background-color);
   padding: 5px 10px;
   border-radius: 40px; 
   animation: float 2s infinite;
 }
 
-.main-left .author-info {
+.main-left .card {
   margin-top: 10px;
   padding: 15px;
-  background: rgba(31, 31, 31, 0.7);
+  background: var(--card-background-color);
   border-radius: 10px;
   text-align: left;
+  width: 80%;
 }
 
-.main-left .author-info p {
+.main-left .card#author-info p {
   margin: 5px 0;
+}
+
+.main-left .card#card-wechat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000;
+}
+
+.main-left .card#card-wechat:hover .flip-content{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card#card-wechat .flip-content {
+  width: 240px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: cubic-bezier(0, 0, 0, 1.29) 1.2s;
+}
+
+.card#card-wechat .flip-content .front,
+.card#card-wechat .flip-content .back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.card#card-wechat .flip-content .back {
+  transform: rotateY(180deg);
 }
 
 .main-right {
@@ -278,7 +310,7 @@ canvas {
     font-size: 50px;
   }
 
-  .main-left .author-info {
+  .main-left .card#author-info {
     font-size: 30px;
   }
 
@@ -325,7 +357,6 @@ canvas {
   }
 }
 
-/* 适用于手机设备 */
 @media (max-width: 768px) {
   .main-left .avatar_img {
     width: 60%;
@@ -344,7 +375,7 @@ canvas {
     font-size: 25px;
   }
 
-  .main-left .author-info {
+  .main-left .card#author-info {
     font-size: 15px;
   }
 
@@ -386,5 +417,4 @@ canvas {
   .main-right .github-cards .card-description {
     font-size: 12px;
   }
-
 }

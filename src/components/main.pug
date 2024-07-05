@@ -6,9 +6,16 @@ main
       span.author-tag2 #{config.left.author_tag.tag2}
     .about-me
       p #{config.left.about_me}
-    .author-info
-      each info in config.left.author_infos
+    .card(id="author-info")
+      each info in config.left.card_author_infos
         p #{info}
+    if config.left.card_wechat.en
+      .card(id="card-wechat" onclick="null")
+        .flip-content
+          - var frontImg = config.left.card_wechat.front_img || 'https://bu.dusays.com/2023/01/13/63c02edf44033.png'
+          - var backImg = config.left.card_wechat.back_img || 'https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/other/wechat.png'
+          .front(style=`background: url(${frontImg}) center center / 100% no-repeat`)
+          .back(style=`background: url(${backImg}) center center / 100% no-repeat`)
   .main-right
     header
       .title #{config.right.title}
@@ -41,5 +48,7 @@ main
           - var snakeImg = config.right.github_snake.img || 'https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg'
           img.github-snake-img(src=`${snakeImg}`, alt='github contribution grid')
 canvas
-<script src='https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js'></script>
-<script src="/js/script.js"></script>
+
+if config.background_effect
+  <script src='https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js'></script>
+  <script src="/js/script.js"></script>

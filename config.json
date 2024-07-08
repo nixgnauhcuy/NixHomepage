@@ -12,14 +12,15 @@
     "config": {
         "background_effect": true,
         "left": {
-            "avatar": {
-                "link": "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/about/my.jpg"
+            "card_author": {
+                "avatar": "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/about/my.jpg",
+                "tag1": "",
+                "tag2": ""
             },
-            "author_tag": {
-                "tag1": "Daydreamer🤡",
-                "tag2": "Procrastinator💤"
+            "card_aboutme": {
+                "en": true,
+                "text": ""
             },
-            "about_me": "Life-long learning",
             "card_wechat": {
                 "en": true,
                 "front_img": "",

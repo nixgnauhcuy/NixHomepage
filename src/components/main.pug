@@ -1,52 +1,71 @@
 main
   .main-left
-    - var avatarImg = config.left.avatar.link || '/assets/avatar.png'
-    .avatar_img(style=`background-image: url(${avatarImg})`)
-      span.author-tag1 #{config.left.author_tag.tag1}
-      span.author-tag2 #{config.left.author_tag.tag2}
-    .about-me
-      p #{config.left.about_me}
-    .card(id="author-info")
+    #author.card
+      - var avatarImg = config.left.card_author.avatar || "/assets/avatar.png";
+      - var tag1Text = config.left.card_author.tag1 || "Daydreamer🤡";
+      - var tag2Text = config.left.card_author.tag2 || "Procrastinator💤";
+      img(
+        src=`${avatarImg}`
+      )
+      span.author-tag1 #{ tag1Text }
+      span.author-tag2 #{ tag2Text }
+    if config.left.card_aboutme.en
+      #author-aboutme.card
+        - var aboutme_text = config.left.card_aboutme.text || "Life-long learning";
+        p #{ aboutme_text }
+    #author-info.card
       each info in config.left.card_author_infos
-        p #{info}
+        p #{ info }
     if config.left.card_wechat.en
-      .card(id="card-wechat" onclick="null")
+      #card-wechat.card(onclick="null")
         .flip-content
-          - var frontImg = config.left.card_wechat.front_img || 'https://bu.dusays.com/2023/01/13/63c02edf44033.png'
-          - var backImg = config.left.card_wechat.back_img || 'https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/other/wechat.png'
-          .front(style=`background: url(${frontImg}) center center / 100% no-repeat`)
-          .back(style=`background: url(${backImg}) center center / 100% no-repeat`)
+          - var frontImg = config.left.card_wechat.front_img || "https://bu.dusays.com/2023/01/13/63c02edf44033.png";
+          - var backImg = config.left.card_wechat.back_img || "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/other/wechat.png";
+          .front(
+            style=`background: url(${frontImg}) center center / 100% no-repeat`
+          )
+          .back(
+            style=`background: url(${backImg}) center center / 100% no-repeat`
+          )
   .main-right
     header
-      .title #{config.right.title}
-      .subtitle #{config.right.subtitle}
+      .title #{ config.right.title }
+      .subtitle #{ config.right.subtitle }
       .social-icons
         each icon in config.right.social_icons
-            a.social-icon(href=icon.href rel="external nofollow noreferrer" target="_blank" title=icon.title)
-              i.social-icon-img: img(src=icon.img_src alt=icon.img_alt)
+          a.social-icon(
+            href=icon.href,
+            rel="external nofollow noreferrer",
+            target="_blank",
+            title=icon.title
+          )
+            i.social-icon-img: img(src=icon.img_src, alt=icon.img_alt)
       if config.right.blog_archives.en
         .blog-archives-section
           h1 Blog Archives
           .timeline
             each post in config.right.blog_archives.list
               .timeline-item
-                a(href=post.url target="_blank")
+                a(href=post.url, target="_blank")
                   h3= post.title
                   p= "📅 " + post.date
-                
+
       if config.right.github.en
         .github-section
           h1 Github Projects
           .github-cards
             each repo in config.right.github.repositories
               .card
-                a(href=repo.url target="_blank")
-                  .card-title #{repo.name}
-                  .card-description #{repo.description}
+                a(href=repo.url, target="_blank")
+                  .card-title #{ repo.name }
+                  .card-description #{ repo.description }
       if config.right.github_snake.en
         .github_snake
-          - var snakeImg = config.right.github_snake.img || 'https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg'
-          img.github-snake-img(src=`${snakeImg}`, alt='github contribution grid')
+          - var snakeImg = config.right.github_snake.img || "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg";
+          img.github-snake-img(
+            src=`${snakeImg}`,
+            alt="github contribution grid"
+          )
 canvas
 
 if config.background_effect

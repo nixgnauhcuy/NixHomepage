@@ -8,6 +8,12 @@
 
 [演示网站](https://www.nixgnauhcuy.top/)
 
+## :camera: 预览
+
+![](/docs/img/light.png)
+
+![](/docs/img/dark.png)
+
 ## :gear: 功能特性
 
 - [x] 移动端适配
@@ -41,22 +47,6 @@ npm run debug
 ## :gear: 配置
 
 编辑 `config.js` 文件，可以自定义修改要展示的内容，自由度高，请自行探索。
-
-## :camera: 预览
-
-![](/docs/img/demo.gif)
-
-### PC
-
-![](/docs/img/pc.png)
-
-### Phone
-
-![](/docs/img/phone.png)
-
-### Pad
-
-![](/docs/img/pad.png)
 
 ## :mailbox_with_mail: 反馈与贡献
 

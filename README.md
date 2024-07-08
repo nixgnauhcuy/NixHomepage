@@ -8,6 +8,12 @@
 
 [demo website](https://www.nixgnauhcuy.top/)
 
+## :camera: Previews
+
+![](/docs/img/light.png)
+
+![](/docs/img/dark.png)
+
 ## :gear: Features
 
 - [x] Mobile adaptation
@@ -42,23 +48,6 @@ Running the command `npm run debug` and then visiting `http://localhost:3000` wi
 
 Edit the `config.js` file to customize and modify the content to be displayed. It offers a high degree of flexibility, so feel free to explore.
 
-## :camera: Previews
-
-![](/docs/img/demo.gif)
-
-### windows
-
-### PC
-
-![](/docs/img/pc.png)
-
-### Phone
-
-![](/docs/img/phone.png)
-
-### Pad
-
-![](/docs/img/pad.png)
 
 ## :mailbox_with_mail: Feedback and Contribution
 

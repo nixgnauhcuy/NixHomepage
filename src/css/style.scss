@@ -127,10 +127,10 @@ main {
 
 .main-right {
   width: calc(100% - 200px);
-  display: flex;
-  padding: 20px;
+  padding: 0 15px;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -146,18 +146,12 @@ main {
   height: 60px;
   display: flex;
   align-items: center;
-  margin-top: 10px;
-}
-
-.main-right .social-icons::-webkit-scrollbar {
-  display: none;
 }
 
 .main-right .social-icon {
   width: 40px;
   height: 35px;
-  box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 10px;
   display: flex;
   margin-left: 10px;
   background: var(--social-icon-color);
@@ -208,25 +202,21 @@ main {
 
 .main-right .social-icon:hover {
   width: 80px;
-  background: var(--social-icon-color);
 }
 
 .main-right .social-icon-img img {
-  margin-top: 3px;
   transform: scale(0.4);
-}
-
-.main-right .social-icon:hover .iconTip {
   display: block;
+  margin: auto;
 }
 
 .main-right .blog-archives-section .timeline {
   overflow-y: scroll;
   height: 170px;
-  width: 68%;
+  width: 80%;
   background: var(--base-background-color);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -245,11 +235,11 @@ main {
   width: 10px;
   height: 10px;
   background: #ffffff;
-  border: 2px solid #999;
+  border: 1px solid #999;
   border-radius: 50%;
   position: absolute;
-  left: -7px;
-  top: 7px;
+  left: -2px;
+  top: 8px;
 }
 
 .main-right .blog-archives-section .timeline .timeline-item a {
@@ -269,17 +259,23 @@ main {
 }
 
 .main-right .github-cards {
+  width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
 }
 
 .main-right .github-cards .card {
   height: 100px;
   background: var(--base-background-color);
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
   transition: transform 0.2s;
+  overflow: auto;
+}
+
+.main-right .github-cards .card::-webkit-scrollbar {
+  display: none;
 }
 
 .main-right .github-cards .card a {
@@ -292,7 +288,7 @@ main {
 
 .main-right .github-cards .card-title {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--base-font-color);
 }
 
@@ -302,7 +298,7 @@ main {
 }
 
 .main-right .github-snake-img {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
 }
@@ -324,7 +320,8 @@ canvas {
   main {
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    text-align: center;
+    font-size: 30px;
   }
 
   .main-left,
@@ -335,91 +332,78 @@ canvas {
     position: relative;
   }
 
-  .main-left .avatar_img {
-    width: 70%;
-    margin-top: 20px;
+  .main-left .card#author .author-tag1 {
+    bottom: 75px;
+  }
+  
+  .main-left .card#author .author-tag2 {
+    bottom: 10px;
   }
 
-  .main-left .author-tag1 {
-    font-size: 30px;
-    bottom: 80px;
-  }
-
-  .main-left .author-tag2 {
-    font-size: 30px;
-  }
-
-  .main-left .about-me {
+  .main-left .card#author-aboutme {
     font-size: 50px;
-  }
-
-  .main-left .card#author-info {
-    font-size: 30px;
   }
 
   .main-right .title {
     font-size: 50px;
-    text-align: center;
   }
 
   .main-right .subtitle {
     font-size: 60px;
-    text-align: center;
   }
 
   .main-right .social-icons {
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
   }
 
-  .main-right .blog-archives-section h1,
-  .main-right .github-section h1 {
-    text-align: center;
-  }
-
   .main-right .blog-archives-section .timeline,
-  .main-right .github-cards .card,
+  .main-right .github-cards,
   .main-right .github-snake-img {
     margin: auto;
-    width: 80%;
   }
 
   .main-right .blog-archives-section .timeline {
-    margin-bottom: 10px;
+    text-align: left;
   }
 
-  .main-right .github-cards .card {
-    margin-bottom: 10px;
+  .main-right .blog-archives-section .timeline .timeline-item::before {
+    width: 10px;
+    height: 10px;
+    left: -2px;
+    top: 10px;
+  }
+  
+  .main-right .blog-archives-section .timeline .timeline-item a h3 {
+    font-size: 25px;
+  }
+  
+  .main-right .blog-archives-section .timeline .timeline-item a p {
     font-size: 20px;
-  }
-
-  .main-right .github-snake-img {
-    width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .main-left .avatar_img {
-    width: 60%;
-  }
-
-  .main-left .author-tag1 {
-    bottom: 35px;
+  main {
     font-size: 15px;
   }
 
-  .main-left .author-tag2 {
-    font-size: 15px;
+  .main-left,
+  .main-right {
+    padding: 10px;
   }
 
-  .main-left .about-me {
+  .main-left .card#author .author-tag1 {
+    bottom: 55px;
+  }
+  
+  .main-left .card#author .author-tag2 {
+    bottom: 15px;
+  }
+
+  .main-left .card#author-aboutme {
     font-size: 25px;
-  }
-
-  .main-left .card#author-info {
-    font-size: 15px;
   }
 
   .main-right .title {
@@ -430,34 +414,22 @@ canvas {
     font-size: 30px;
   }
 
-  .main-right .social-icon {
-    width: 48px;
-    height: 48px;
+  .main-right .social-icons {
+    margin-top: 10px;
   }
 
-  .main-right .social-icon {
-    width: 48px;
-    height: 48px;
+  .main-right .blog-archives-section .timeline .timeline-item::before {
+    width: 5px;
+    height: 5px;
+    left: 5px;
+    top: 7px;
   }
-
+  
   .main-right .blog-archives-section .timeline .timeline-item a h3 {
     font-size: 15px;
   }
-
+  
   .main-right .blog-archives-section .timeline .timeline-item a p {
     font-size: 10px;
-  }
-
-  .main-right .github-cards .card {
-    height: 60px;
-    font-size: 20px;
-  }
-
-  .main-right .github-cards .card-title {
-    font-size: 15px;
-  }
-
-  .main-right .github-cards .card-description {
-    font-size: 12px;
   }
 }

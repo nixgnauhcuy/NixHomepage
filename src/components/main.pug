@@ -4,9 +4,7 @@ main
       - var avatarImg = config.left.card_author.avatar || "/assets/avatar.png";
       - var tag1Text = config.left.card_author.tag1 || "Daydreamer🤡";
       - var tag2Text = config.left.card_author.tag2 || "Procrastinator💤";
-      img(
-        src=`${avatarImg}`
-      )
+      img(src=`${avatarImg}`)
       span.author-tag1 #{ tag1Text }
       span.author-tag2 #{ tag2Text }
     if config.left.card_aboutme.en
@@ -38,7 +36,7 @@ main
           target="_blank",
           title=icon.title
         )
-          i.social-icon-img: img(src=icon.img_src, alt=icon.img_alt)
+          i(class=`iconfont ${icon.icon}`)
     if config.right.blog_archives.en
       .blog-archives-section
         h1 Blog Archives
@@ -60,10 +58,7 @@ main
     if config.right.github_snake.en
       .github_snake
         - var snakeImg = config.right.github_snake.img || "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg";
-        img.github-snake-img(
-          src=`${snakeImg}`,
-          alt="github contribution grid"
-        )
+        img.github-snake-img(src=`${snakeImg}`, alt="github contribution grid")
 canvas
 
 if config.background_effect

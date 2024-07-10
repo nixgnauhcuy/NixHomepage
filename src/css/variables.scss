@@ -1,8 +1,21 @@
-// color
-html {
-    --base-background-color: #1F1F1F;
-    --base-font-color: #F1F1F1;
-    --white-background-color: #F1F1F1;
-    --social-icon-color: #F1F1F1;
-    --card-background-color: rgba(31, 31, 31, 0.7);
+:root {
+  --base-background-color: rgba(21, 21, 21, 1);
+  --base-card-color: rgba(31, 31, 31, 0.7);
+  --base-font-color: rgba(241, 241, 241, 1);
+  --social-icon-color: rgba(241, 241, 241, 1);
+
+  --card-border: #313131;
+  --style-border: 1px solid var(--card-border);
+  --card-wechar-background-color: rgba(31, 31, 31, 0.7);
+}
+
+.light-mode {
+  --base-background-color: rgba(247, 249, 254, 1);
+  --base-card-color: rgba(255, 255, 255, 1);
+  --base-font-color: rgba(14, 14, 14, 1);
+  --social-icon-color: rgba(14, 14, 14, 1);
+
+  --card-border: #e3e8f7;
+  --style-border: 1px solid var(--card-border);
+  --card-wechar-background-color: rgba(87, 189, 106, 0.7);
 }

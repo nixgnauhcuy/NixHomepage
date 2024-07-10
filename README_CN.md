@@ -6,17 +6,19 @@
 
 # :computer: NixHomepage - 简单的个人网站
 
-[演示网站](https://www.nixgnauhcuy.top/)
+[演示网站](https://www.nixgnauhcuy.top/)，如果你喜欢这个项目，也许你可以 Star 一下~
 
 ## :camera: 预览
 
-![](/docs/img/light.png)
+![](/docs/img/img1.png)
 
-![](/docs/img/dark.png)
+![](/docs/img/img2.png)
 
 ## :gear: 功能特性
 
-- [x] 移动端适配
+- [x] 多平台适配
+- [x] 明亮/暗黑模式切换
+- [x] [WebGL-Fluid](https://github.com/AYJCSGM/WebGL-Fluid-Simulation/tree/master) 背景特效支持
 
 ## :rocket: 快速开始
 

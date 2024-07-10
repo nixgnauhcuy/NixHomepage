@@ -6,17 +6,19 @@
 
 # :computer: NixHomepage - Simple personal website
 
-[demo website](https://www.nixgnauhcuy.top/)
+[demo website](https://www.nixgnauhcuy.top/), if you like this project, maybe you can star it~
 
 ## :camera: Previews
 
-![](/docs/img/light.png)
+![](/docs/img/img1.png)
 
-![](/docs/img/dark.png)
+![](/docs/img/img2.png)
 
 ## :gear: Features
 
-- [x] Mobile adaptation
+- [x] Multi-platform compatibility
+- [x] Light/Dark mode switch
+- [x] [WebGL-Fluid](https://github.com/AYJCSGM/WebGL-Fluid-Simulation/tree/master) background effect support
 
 ## :rocket: Quick Start
 
@@ -47,7 +49,6 @@ Running the command `npm run debug` and then visiting `http://localhost:3000` wi
 ## :gear: Config
 
 Edit the `config.js` file to customize and modify the content to be displayed. It offers a high degree of flexibility, so feel free to explore.
-
 
 ## :mailbox_with_mail: Feedback and Contribution
 

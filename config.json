@@ -1,135 +1,164 @@
 {
-    "site": {
-        "head_title": "nixgnauhcuy's homepage",
-        "title": "nixgnauhcuy",
-        "subtitle": "Life-long learning",
-        "description": "nixgnauhcuy's homepage",
-        "author": "nixgnauhcuy",
-        "keywords": ["nixgnauhcuy", "homepage"],
-        "language": "en-US",
-        "favicon": "/assets/favicon.png"
+  "site": {
+    "head_title": "nixgnauhcuy's homepage",
+    "title": "nixgnauhcuy",
+    "subtitle": "Life-long learning",
+    "description": "nixgnauhcuy's homepage",
+    "author": "nixgnauhcuy",
+    "keywords": ["nixgnauhcuy", "homepage"],
+    "language": "en-US",
+    "favicon": "/assets/favicon.png"
+  },
+  "config": {
+    "webgl_fluid": {
+      "en": false,
+      "settings": {
+        "SIM_RESOLUTION": 128,
+        "DYE_RESOLUTION": 1024,
+        "CAPTURE_RESOLUTION": 512,
+        "DENSITY_DISSIPATION": 1,
+        "VELOCITY_DISSIPATION": 0.2,
+        "PRESSURE": 0.8,
+        "PRESSURE_ITERATIONS": 20,
+        "CURL": 30,
+        "SPLAT_RADIUS": 0.25,
+        "SPLAT_FORCE": 6000,
+        "SHADING": true,
+        "COLORFUL": true,
+        "COLOR_UPDATE_SPEED": 10,
+        "PAUSED": false,
+        "BACK_COLOR": { "r": 0, "g": 0, "b": 0, "a": 0 },
+        "TRANSPARENT": false,
+        "BLOOM": true,
+        "BLOOM_ITERATIONS": 8,
+        "BLOOM_RESOLUTION": 256,
+        "BLOOM_INTENSITY": 0.8,
+        "BLOOM_THRESHOLD": 0.6,
+        "BLOOM_SOFT_KNEE": 0.7,
+        "SUNRAYS": true,
+        "SUNRAYS_RESOLUTION": 196,
+        "SUNRAYS_WEIGHT": 1.0
+      }
     },
-    "config": {
-        "background_effect": true,
-        "left": {
-            "card_author": {
-                "avatar": "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/about/my.jpg",
-                "tag1": "",
-                "tag2": ""
-            },
-            "card_aboutme": {
-                "en": true,
-                "text": ""
-            },
-            "card_wechat": {
-                "en": true,
-                "front_img": "",
-                "back_img": ""
-            },
-            "card_author_infos": [
-                "📫 nixgnauhcuy@gmail.com",
-                "🏠 ShenZhen, China",
-                "💼 Embedded Software Engineer",
-                "🌝 MBTI, INTP-T"
-            ]
+    "left": {
+      "card_author": {
+        "avatar": "https://testingcf.jsdelivr.net/gh/nixgnauhcuy/blog_cdn@1.0/img/about/my.jpg",
+        "tag1": "",
+        "tag2": ""
+      },
+      "card_aboutme": {
+        "en": true,
+        "text": ""
+      },
+      "card_wechat": {
+        "en": true,
+        "front_img": "",
+        "back_img": ""
+      },
+      "card_author_infos": [
+        "📫 nixgnauhcuy@gmail.com",
+        "🏠 ShenZhen, China",
+        "💼 Embedded Software Engineer",
+        "🌝 MBTI, INTP-T"
+      ]
+    },
+    "right": {
+      "title": "Hi, I'm nixgnauhcuy 👋",
+      "subtitle": "This is my personal site.",
+      "social_icons": [
+        {
+          "href": "https://www.nixgnauhcuy.cn",
+          "title": "Blog",
+          "icon": "icon-blogger",
+          "img_alt": "Blog Icon"
         },
-        "right": {
-            "title": "Hi, I'm nixgnauhcuy 👋",
-            "subtitle": "This is my personal site.",
-            "social_icons": [
-                {
-                    "href": "https://www.nixgnauhcuy.cn",
-                    "title": "Blog",
-                    "img_src": "assets/icon-blog.svg",
-                    "img_alt": "Blog Icon"
-                },
-                {
-                    "href": "https://github.com/nixgnauhcuy",
-                    "title": "Github",
-                    "img_src": "assets/icon-github.svg",
-                    "img_alt": "Github Icon"
-                },
-                {
-                    "href": "https://nixgnauhcuy.cn/atom.xml",
-                    "title": "Rss",
-                    "img_src": "assets/icon-rss.svg",
-                    "img_alt": "Rss Icon"
-                }
-            ],
-            "blog_archives": {
-                "en": true,
-                "list": [
-                    {
-                        "title": "记录 axf 转 bin python 脚本笔记",
-                        "date": "2024-06-21",
-                        "url": "https://www.nixgnauhcuy.cn/60a5dd23b536/"
-                    },
-                    {
-                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（四）",
-                        "date": "2024-06-17",
-                        "url": "https://www.nixgnauhcuy.cn/423b1931ce58/"
-                    },
-                    {
-                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（三）",
-                        "date": "2024-06-14",
-                        "url": "https://www.nixgnauhcuy.cn/a0c7dce1d4fa/"
-                    },
-                    {
-                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（二）",
-                        "date": "2024-06-13",
-                        "url": "https://www.nixgnauhcuy.cn/f1b80f317887/"
-                    },
-                    {
-                        "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（一）",
-                        "date": "2024-06-12",
-                        "url": "https://www.nixgnauhcuy.cn/8d34424033d0/"
-                    },
-                    {
-                        "title": "S32DS Build Command 技巧",
-                        "date": "2024-05-24",
-                        "url": "https://www.nixgnauhcuy.cn/42c8065d1ad6/"
-                    }
-                ]
-            },
-            "github": {
-                "en": true,
-                "repositories": [
-                    {
-                        "name": "QtComMate",
-                        "description": "Simple Serial Port Tool Based on pyqt6.",
-                        "url": "https://github.com/nixgnauhcuy/QtComMate"
-                    },
-                    {
-                        "name": "QCustomPlot_Pyqt_Study",
-                        "description": "Implement the QCustomPlot Demo using PyQt.",
-                        "url": "https://github.com/nixgnauhcuy/QCustomPlot_Pyqt_Study"
-                    },
-                    {
-                        "name": "WechatImgDatDecodeQt",
-                        "description": "Wechat Image .dat Decoder Based on PyQt6.",
-                        "url": "https://github.com/nixgnauhcuy/WechatImgDatDecodeQt"
-                    },
-                    {
-                        "name": "nxp-uuu-qt-tool",
-                        "description": "Gui tool based on mfgtools uuu.",
-                        "url": "https://github.com/nixgnauhcuy/nxp-uuu-qt-tool"
-                    },
-                    {
-                        "name": "python_script",
-                        "description": "Package some personal Python scripts into an executable file for use..",
-                        "url": "https://github.com/nixgnauhcuy/python_script"
-                    },
-                    {
-                        "name": "TrayCPUTool",
-                        "description": "Implemented in C# that updates the animation speed of the bottom system tray based on the current CPU usage.",
-                        "url": "https://github.com/nixgnauhcuy/TrayCPUTool"
-                    }
-                ]
-            },
-            "github_snake": {
-                "en": true,
-                "img": ""
-            }
+        {
+          "href": "https://github.com/nixgnauhcuy",
+          "title": "Github",
+          "icon": "icon-GitHub",
+          "img_alt": "Github Icon"
+        },
+        {
+          "href": "https://nixgnauhcuy.cn/atom.xml",
+          "title": "Rss",
+          "icon": "icon-rss",
+          "img_alt": "Rss Icon"
         }
+      ],
+      "blog_archives": {
+        "en": true,
+        "list": [
+          {
+            "title": "记录 axf 转 bin python 脚本笔记",
+            "date": "2024-06-21",
+            "url": "https://www.nixgnauhcuy.cn/60a5dd23b536/"
+          },
+          {
+            "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（四）",
+            "date": "2024-06-17",
+            "url": "https://www.nixgnauhcuy.cn/423b1931ce58/"
+          },
+          {
+            "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（三）",
+            "date": "2024-06-14",
+            "url": "https://www.nixgnauhcuy.cn/a0c7dce1d4fa/"
+          },
+          {
+            "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（二）",
+            "date": "2024-06-13",
+            "url": "https://www.nixgnauhcuy.cn/f1b80f317887/"
+          },
+          {
+            "title": "Pyqt QCustomPlot 简介、安装与实用代码示例（一）",
+            "date": "2024-06-12",
+            "url": "https://www.nixgnauhcuy.cn/8d34424033d0/"
+          },
+          {
+            "title": "S32DS Build Command 技巧",
+            "date": "2024-05-24",
+            "url": "https://www.nixgnauhcuy.cn/42c8065d1ad6/"
+          }
+        ]
+      },
+      "github": {
+        "en": true,
+        "repositories": [
+          {
+            "name": "QtComMate",
+            "description": "Simple Serial Port Tool Based on pyqt6.",
+            "url": "https://github.com/nixgnauhcuy/QtComMate"
+          },
+          {
+            "name": "QCustomPlot_Pyqt_Study",
+            "description": "Implement the QCustomPlot Demo using PyQt.",
+            "url": "https://github.com/nixgnauhcuy/QCustomPlot_Pyqt_Study"
+          },
+          {
+            "name": "WechatImgDatDecodeQt",
+            "description": "Wechat Image .dat Decoder Based on PyQt6.",
+            "url": "https://github.com/nixgnauhcuy/WechatImgDatDecodeQt"
+          },
+          {
+            "name": "nxp-uuu-qt-tool",
+            "description": "Gui tool based on mfgtools uuu.",
+            "url": "https://github.com/nixgnauhcuy/nxp-uuu-qt-tool"
+          },
+          {
+            "name": "python_script",
+            "description": "Package some personal Python scripts into an executable file for use..",
+            "url": "https://github.com/nixgnauhcuy/python_script"
+          },
+          {
+            "name": "TrayCPUTool",
+            "description": "Implemented in C# that updates the animation speed of the bottom system tray based on the current CPU usage.",
+            "url": "https://github.com/nixgnauhcuy/TrayCPUTool"
+          }
+        ]
+      },
+      "github_snake": {
+        "en": true,
+        "img": ""
+      }
     }
+  }
 }

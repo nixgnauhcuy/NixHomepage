@@ -321,19 +321,21 @@ main {
 }
 
 .main-right #mode-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 5px;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   background: var(--base-card-color);
   border-radius: 10px;
 }
 
 .main-right #mode-btn i {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--base-font-color);
 }
 

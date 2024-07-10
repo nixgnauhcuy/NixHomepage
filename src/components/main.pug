@@ -61,8 +61,8 @@ main
         img.github-snake-img(src=`${snakeImg}`, alt="github contribution grid")
     button(type='button' id='mode-btn' title='Mode')
       i(class='iconfont icon-circle-half-stroke')
-canvas
 
-if config.background_effect
-  <script src='/js/webgl-fluid.js'></script>
+if config.webgl_fluid.en
+  canvas
+  <script type="module" src='/js/webgl-fluid.js'></script>
 <script src="/js/main.js"></script>

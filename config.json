@@ -46,10 +46,7 @@
         "tag1": "",
         "tag2": ""
       },
-      "card_aboutme": {
-        "en": true,
-        "text": ""
-      },
+      "card_aboutme": "Life-long learning",
       "card_wechat": {
         "en": true,
         "front_img": "",
@@ -155,10 +152,8 @@
           }
         ]
       },
-      "github_snake": {
-        "en": true,
-        "img": ""
-      }
+      "github_snake_url": "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg",
+      "mode_btn_en": true
     }
   }
 }

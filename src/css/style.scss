@@ -251,7 +251,7 @@ main {
   content: "";
   width: 10px;
   height: 10px;
-  background: #ffffff;
+  background: var(--social-icon-color);
   border: 1px solid #999;
   border-radius: 50%;
   position: absolute;
@@ -266,13 +266,13 @@ main {
 .main-right .blog-archives-section .timeline .timeline-item a h3 {
   margin: 0;
   font-size: 18px;
-  color: #999;
+  color: var(--base-font-color);
 }
 
 .main-right .blog-archives-section .timeline .timeline-item a p {
   margin: 5px 0 0;
   font-size: 14px;
-  color: #999;
+  color: var(--base-font-color);
 }
 
 .main-right .github-cards {
@@ -311,7 +311,7 @@ main {
 
 .main-right .github-cards .card-description {
   font-size: 14px;
-  color: #999;
+  color: var(--base-font-color);
 }
 
 .main-right .github-snake-img {

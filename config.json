@@ -10,8 +10,9 @@
     "favicon": "/assets/favicon.png"
   },
   "config": {
-    "webgl_fluid": {
-      "en": false,
+    "canvas_gradient": false,
+    "canvas_webgl_fluid": {
+      "en": true,
       "settings": {
         "SIM_RESOLUTION": 128,
         "DYE_RESOLUTION": 1024,

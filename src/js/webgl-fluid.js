@@ -28,7 +28,7 @@ const canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
 
 const config_fs = /* CONFIG_PLACEHOLDER */;
-let config = config_fs.config.webgl_fluid.settings;
+let config = config_fs.config.canvas_webgl_fluid.settings;
 
 function pointerPrototype () {
     this.id = -1;

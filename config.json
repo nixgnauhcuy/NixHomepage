@@ -48,17 +48,19 @@
         "tag2": ""
       },
       "card_aboutme": "Life-long learning",
-      "card_wechat": {
-        "en": true,
-        "front_img": "",
-        "back_img": ""
-      },
+      "card_whoami": "Nixgnauhcuy is an embedded software engineer from Shenzhen who approaches his interests with curiosity, constantly exploring uncharted territories.",
       "card_author_infos": [
         "📫 nixgnauhcuy@gmail.com",
         "🏠 ShenZhen, China",
         "💼 Embedded Software Engineer",
         "🌝 MBTI, INTP-T"
-      ]
+      ],
+      "card_like": "Game, Music, Sleep in!",
+      "card_wechat": {
+        "en": true,
+        "front_img": "",
+        "back_img": ""
+      }
     },
     "right": {
       "title": "Hi, I'm nixgnauhcuy 👋",

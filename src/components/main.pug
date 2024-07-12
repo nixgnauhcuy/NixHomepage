@@ -10,9 +10,17 @@ main
     if config.left.card_aboutme
       #author-aboutme.card
         p #{ config.left.card_aboutme }
+    if config.left.card_whoami
+      #author-whoami.card
+        h3 👨🏽‍💻 whoami
+        p &nbsp;&nbsp;&nbsp;&nbsp;#{ config.left.card_whoami }
     #author-info.card
       each info in config.left.card_author_infos
         p #{ info }
+    if config.left.card_like
+      #author-like.card
+        h3 I ❤️
+          p &nbsp;&nbsp;&nbsp;&nbsp;#{ config.left.card_like }
     if config.left.card_wechat.en
       #card-wechat.card(onclick="null")
         .flip-content

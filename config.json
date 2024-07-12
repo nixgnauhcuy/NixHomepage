@@ -67,20 +67,17 @@
         {
           "href": "https://www.nixgnauhcuy.cn",
           "title": "Blog",
-          "icon": "icon-blogger",
-          "img_alt": "Blog Icon"
+          "icon": "icon-blogger"
         },
         {
           "href": "https://github.com/nixgnauhcuy",
           "title": "Github",
-          "icon": "icon-GitHub",
-          "img_alt": "Github Icon"
+          "icon": "icon-GitHub"
         },
         {
           "href": "https://nixgnauhcuy.cn/atom.xml",
           "title": "Rss",
-          "icon": "icon-rss",
-          "img_alt": "Rss Icon"
+          "icon": "icon-rss"
         }
       ],
       "blog_archives": {

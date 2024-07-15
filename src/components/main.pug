@@ -17,10 +17,6 @@ main
     #author-info.card
       each info in config.left.card_author_infos
         p #{ info }
-    if config.left.card_like
-      #author-like.card
-        h3 I ❤️
-          p &nbsp;&nbsp;&nbsp;&nbsp;#{ config.left.card_like }
     if config.left.card_wechat.en
       #card-wechat.card(onclick="null")
         .flip-content

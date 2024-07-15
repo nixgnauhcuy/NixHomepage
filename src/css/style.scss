@@ -90,6 +90,10 @@ main {
   text-align: center;
 }
 
+.main-left .card#author-whoami h3 {
+  margin-top: 5px;
+}
+
 .main-left .card#author-info,
 .main-left .card#card-wechat {
   border: var(--style-border);

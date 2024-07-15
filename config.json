@@ -27,7 +27,6 @@
         "SHADING": true,
         "COLORFUL": true,
         "COLOR_UPDATE_SPEED": 10,
-        "PAUSED": false,
         "BACK_COLOR": { "r": 0, "g": 0, "b": 0, "a": 0 },
         "TRANSPARENT": false,
         "BLOOM": true,
@@ -50,7 +49,6 @@
       "card_aboutme": "Life-long learning",
       "card_whoami": "Nixgnauhcuy is an embedded software engineer from Shenzhen who approaches his interests with curiosity, constantly exploring uncharted territories.",
       "card_author_infos": [
-        "📫 nixgnauhcuy@gmail.com",
         "🏠 ShenZhen, China",
         "💼 Embedded Software Engineer",
         "🌝 MBTI, INTP-T",
@@ -73,13 +71,18 @@
         },
         {
           "href": "https://github.com/nixgnauhcuy",
-          "title": "Github",
+          "title": "Github@nixgnauhcuy",
           "icon": "icon-GitHub"
         },
         {
           "href": "https://nixgnauhcuy.cn/atom.xml",
           "title": "Rss",
           "icon": "icon-rss"
+        },
+        {
+          "href": "mailto:nixgnauhcuy@gmail.com",
+          "title": "Email@nixgnauhcuy@gmail.com",
+          "icon": "icon-envelope"
         }
       ],
       "blog_archives": {

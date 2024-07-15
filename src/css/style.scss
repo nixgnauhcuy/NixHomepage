@@ -27,9 +27,10 @@ main {
 }
 
 .main-left {
+  margin-left: 200px;
   height: 100vh;
   overflow-y: scroll;
-  width: 40%;
+  width: 35%;
   display: flex;
   padding: 0 15px;
   position: sticky;

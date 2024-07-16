@@ -4,7 +4,7 @@ body {
   font-family: Roboto;
   color: var(--base-font-color);
   background-color: var(--base-background-color);
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 @keyframes float {
@@ -20,36 +20,30 @@ body {
 }
 
 main {
-  margin: 0 auto;
+  margin: 10px auto;
   position: relative;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .main-left {
-  height: 100vh;
-  overflow-y: scroll;
-  width: 40%;
+  width: 30%;
+  height: auto;
   display: flex;
   padding: 0 15px;
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: fixed;
   align-items: center;
   flex-direction: column;
 }
 
-.main-left::-webkit-scrollbar {
-  display: none;
-}
-
 .main-left .card {
   margin-top: 10px;
-  padding: 15px;
+  padding: 8px;
   background: var(--base-card-color);
   border-radius: 10px;
   text-align: left;
-  width: 80%;
+  width: 70%;
   position: relative;
 }
 
@@ -59,7 +53,7 @@ main {
 
 .main-left .card#author img {
   border-radius: 50%;
-  width: 75%;
+  width: 80%;
   display: block;
   margin: auto;
 }
@@ -207,7 +201,8 @@ main {
 }
 
 .main-right {
-  width: calc(100% - 200px);
+  margin-left: 30%;
+  width: 60%;
   padding: 0 15px;
   position: relative;
   padding-bottom: 25px;
@@ -380,6 +375,7 @@ canvas {
     height: auto;
     padding: 10px;
     position: relative;
+    margin-left: 0%;
   }
 
   .main-left .card#author .author-tag1 {
@@ -394,18 +390,18 @@ canvas {
     font-size: 50px;
   }
 
+  .main-left .social-icons {
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
   .main-right .title {
     font-size: 50px;
   }
 
   .main-right .subtitle {
     font-size: 60px;
-  }
-
-  .main-right .social-icons {
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
   }
 
   .main-right .blog-archives-section .timeline,
@@ -442,6 +438,7 @@ canvas {
   .main-left,
   .main-right {
     padding: 10px;
+    margin-left: 0%;
   }
 
   .main-left .card#author .author-tag1 {
@@ -456,16 +453,16 @@ canvas {
     font-size: 25px;
   }
 
+  .main-left .social-icons {
+    margin-top: -20px;
+  }
+
   .main-right .title {
     font-size: 25px;
   }
 
   .main-right .subtitle {
     font-size: 30px;
-  }
-
-  .main-right .social-icons {
-    margin-top: 10px;
   }
 
   .main-right .blog-archives-section .timeline .timeline-item::before {

@@ -27,10 +27,9 @@ main {
 }
 
 .main-left {
-  margin-left: 200px;
   height: 100vh;
   overflow-y: scroll;
-  width: 35%;
+  width: 40%;
   display: flex;
   padding: 0 15px;
   position: sticky;
@@ -60,7 +59,7 @@ main {
 
 .main-left .card#author img {
   border-radius: 50%;
-  width: 85%;
+  width: 75%;
   display: block;
   margin: auto;
 }
@@ -89,6 +88,77 @@ main {
   margin-top: -30px;
   font-size: 25px;
   text-align: center;
+}
+
+.main-left .social-icons {
+  height: 60px;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-left .social-icons a {
+  text-decoration: none;
+}
+
+.main-left .social-icon {
+  border: var(--style-border);
+}
+
+.main-left .social-icon {
+  width: 40px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 10px;
+  background: var(--social-icon-color);
+  align-items: center;
+  justify-content: center;
+  transition: all 1s
+    linear(
+      0 0%,
+      0 2.27%,
+      0.02 4.53%,
+      0.04 6.8%,
+      0.06 9.07%,
+      0.1 11.33%,
+      0.14 13.6%,
+      0.25 18.15%,
+      0.39 22.7%,
+      0.56 27.25%,
+      0.77 31.8%,
+      1 36.35%,
+      0.89 40.9%,
+      0.85 43.18%,
+      0.81 45.45%,
+      0.79 47.72%,
+      0.77 50%,
+      0.75 52.27%,
+      0.75 54.55%,
+      0.75 56.82%,
+      0.77 59.1%,
+      0.79 61.38%,
+      0.81 63.65%,
+      0.85 65.93%,
+      0.89 68.2%,
+      1 72.7%,
+      0.97 74.98%,
+      0.95 77.25%,
+      0.94 79.53%,
+      0.94 81.8%,
+      0.94 84.08%,
+      0.95 86.35%,
+      0.97 88.63%,
+      1 90.9%,
+      0.99 93.18%,
+      0.98 95.45%,
+      0.99 97.73%,
+      1 100%
+    );
+}
+
+.main-left .social-icon:hover {
+  width: 80px;
 }
 
 .main-left .card#author-whoami h3 {
@@ -153,76 +223,9 @@ main {
   font-size: 60px;
 }
 
-.main-right .social-icons {
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-
-.main-right .social-icons a {
-  text-decoration: none;
-}
-
-.main-right .social-icon,
 .main-right .blog-archives-section .timeline,
 .main-right .github-cards .card {
   border: var(--style-border);
-}
-
-.main-right .social-icon {
-  width: 40px;
-  height: 35px;
-  border-radius: 10px;
-  display: flex;
-  margin-left: 10px;
-  background: var(--social-icon-color);
-  align-items: center;
-  justify-content: center;
-  transition: all 1s
-    linear(
-      0 0%,
-      0 2.27%,
-      0.02 4.53%,
-      0.04 6.8%,
-      0.06 9.07%,
-      0.1 11.33%,
-      0.14 13.6%,
-      0.25 18.15%,
-      0.39 22.7%,
-      0.56 27.25%,
-      0.77 31.8%,
-      1 36.35%,
-      0.89 40.9%,
-      0.85 43.18%,
-      0.81 45.45%,
-      0.79 47.72%,
-      0.77 50%,
-      0.75 52.27%,
-      0.75 54.55%,
-      0.75 56.82%,
-      0.77 59.1%,
-      0.79 61.38%,
-      0.81 63.65%,
-      0.85 65.93%,
-      0.89 68.2%,
-      1 72.7%,
-      0.97 74.98%,
-      0.95 77.25%,
-      0.94 79.53%,
-      0.94 81.8%,
-      0.94 84.08%,
-      0.95 86.35%,
-      0.97 88.63%,
-      1 90.9%,
-      0.99 93.18%,
-      0.98 95.45%,
-      0.99 97.73%,
-      1 100%
-    );
-}
-
-.main-right .social-icon:hover {
-  width: 80px;
 }
 
 .iconfont {

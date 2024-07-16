@@ -46,7 +46,32 @@
         "tag1": "",
         "tag2": ""
       },
-      "card_aboutme": "Life-long learning",
+      "card_aboutme": "Life-long learning!",
+      "social": {
+        "en": true,
+        "icons": [
+          {
+            "href": "https://www.nixgnauhcuy.cn",
+            "title": "Blog",
+            "icon": "icon-blogger"
+          },
+          {
+            "href": "https://github.com/nixgnauhcuy",
+            "title": "Github@nixgnauhcuy",
+            "icon": "icon-GitHub"
+          },
+          {
+            "href": "https://nixgnauhcuy.cn/atom.xml",
+            "title": "Rss",
+            "icon": "icon-rss"
+          },
+          {
+            "href": "mailto:nixgnauhcuy@gmail.com",
+            "title": "Email@nixgnauhcuy@gmail.com",
+            "icon": "icon-envelope"
+          }
+        ]
+      },
       "card_whoami": "Nixgnauhcuy is an embedded software engineer from Shenzhen who approaches his interests with curiosity, constantly exploring uncharted territories.",
       "card_author_infos": [
         "🏠 ShenZhen, China",
@@ -63,28 +88,6 @@
     "right": {
       "title": "Hi, I'm nixgnauhcuy 👋",
       "subtitle": "This is my personal site.",
-      "social_icons": [
-        {
-          "href": "https://www.nixgnauhcuy.cn",
-          "title": "Blog",
-          "icon": "icon-blogger"
-        },
-        {
-          "href": "https://github.com/nixgnauhcuy",
-          "title": "Github@nixgnauhcuy",
-          "icon": "icon-GitHub"
-        },
-        {
-          "href": "https://nixgnauhcuy.cn/atom.xml",
-          "title": "Rss",
-          "icon": "icon-rss"
-        },
-        {
-          "href": "mailto:nixgnauhcuy@gmail.com",
-          "title": "Email@nixgnauhcuy@gmail.com",
-          "icon": "icon-envelope"
-        }
-      ],
       "blog_archives": {
         "en": true,
         "list": [

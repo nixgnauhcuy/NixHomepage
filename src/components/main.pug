@@ -10,6 +10,16 @@ main
     if config.left.card_aboutme
       #author-aboutme.card
         p #{ config.left.card_aboutme }
+    if config.left.social.en
+      .social-icons
+        each icon in config.left.social.icons
+          a.social-icon(
+            href=icon.href,
+            rel="external nofollow noreferrer",
+            target="_blank",
+            title=icon.title
+          )
+            i(class=`iconfont ${icon.icon}`)
     if config.left.card_whoami
       #author-whoami.card
         h3 👨🏽‍💻 whoami
@@ -33,15 +43,6 @@ main
       .title #{ config.right.title }
     if config.right.subtitle
       .subtitle #{ config.right.subtitle }
-    .social-icons
-      each icon in config.right.social_icons
-        a.social-icon(
-          href=icon.href,
-          rel="external nofollow noreferrer",
-          target="_blank",
-          title=icon.title
-        )
-          i(class=`iconfont ${icon.icon}`)
     if config.right.blog_archives.en
       .blog-archives-section
         h1 Blog Archives

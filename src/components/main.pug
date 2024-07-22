@@ -7,10 +7,23 @@ main
       img(src=`${avatarImg}`)
       span.author-tag1 #{ tag1Text }
       span.author-tag2 #{ tag2Text }
-    if config.left.card_aboutme.en
+    if config.left.card_aboutme
       #author-aboutme.card
-        - var aboutme_text = config.left.card_aboutme.text || "Life-long learning";
-        p #{ aboutme_text }
+        p #{ config.left.card_aboutme }
+    if config.left.social.en
+      .social-icons
+        each icon in config.left.social.icons
+          a.social-icon(
+            href=icon.href,
+            rel="external nofollow noreferrer",
+            target="_blank",
+            title=icon.title
+          )
+            i(class=`iconfont ${icon.icon}`)
+    if config.left.card_whoami
+      #author-whoami.card
+        h3 👨🏽‍💻 whoami
+        p &nbsp;&nbsp;&nbsp;&nbsp;#{ config.left.card_whoami }
     #author-info.card
       each info in config.left.card_author_infos
         p #{ info }
@@ -26,17 +39,19 @@ main
             style=`background: url(${backImg}) center center / 100% no-repeat`
           )
   .main-right
-    .title #{ config.right.title }
-    .subtitle #{ config.right.subtitle }
-    .social-icons
-      each icon in config.right.social_icons
-        a.social-icon(
-          href=icon.href,
-          rel="external nofollow noreferrer",
-          target="_blank",
-          title=icon.title
-        )
-          i(class=`iconfont ${icon.icon}`)
+    if config.right.title
+      .title #{ config.right.title }
+    if config.right.subtitle
+      .subtitle #{ config.right.subtitle }
+    if config.right.navigation.en
+      .navigation-section
+        h1 Navigation
+        .navigation-cards
+          each site in config.right.navigation.sites
+            a(href=site.url, target="_blank")
+              .card
+                .card-icon(class=`iconfont ${site.icon}`)
+                .card-title #{ site.name }
     if config.right.blog_archives.en
       .blog-archives-section
         h1 Blog Archives
@@ -55,14 +70,16 @@ main
               a(href=repo.url, target="_blank")
                 .card-title #{ repo.name }
                 .card-description #{ repo.description }
-    if config.right.github_snake.en
+    if config.right.github_snake_url
       .github_snake
-        - var snakeImg = config.right.github_snake.img || "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg";
-        img.github-snake-img(src=`${snakeImg}`, alt="github contribution grid")
-    button(type='button' id='mode-btn' title='Mode')
-      i(class='iconfont icon-circle-half-stroke')
+        img.github-snake-img(src=`${config.right.github_snake_url}`, alt="github contribution grid")
+    if config.right.mode_btn_en
+      button(type='button' id='mode-btn' title='Mode')
+        i(class='iconfont icon-circle-half-stroke')
 
-if config.webgl_fluid.en
-  canvas
+canvas
+
+if config.canvas_webgl_fluid.en
   <script type="module" src='/js/webgl-fluid.js'></script>
+
 <script src="/js/main.js"></script>

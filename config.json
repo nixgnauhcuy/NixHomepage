@@ -10,8 +10,9 @@
     "favicon": "/assets/favicon.png"
   },
   "config": {
-    "webgl_fluid": {
-      "en": false,
+    "canvas_gradient": false,
+    "canvas_webgl_fluid": {
+      "en": true,
       "settings": {
         "SIM_RESOLUTION": 128,
         "DYE_RESOLUTION": 1024,
@@ -26,7 +27,6 @@
         "SHADING": true,
         "COLORFUL": true,
         "COLOR_UPDATE_SPEED": 10,
-        "PAUSED": false,
         "BACK_COLOR": { "r": 0, "g": 0, "b": 0, "a": 0 },
         "TRANSPARENT": false,
         "BLOOM": true,
@@ -46,45 +46,73 @@
         "tag1": "",
         "tag2": ""
       },
-      "card_aboutme": {
+      "card_aboutme": "Life-long learning!",
+      "social": {
         "en": true,
-        "text": ""
+        "icons": [
+          {
+            "href": "https://www.nixgnauhcuy.cn",
+            "title": "Blog",
+            "icon": "icon-blogger"
+          },
+          {
+            "href": "https://github.com/nixgnauhcuy",
+            "title": "Github@nixgnauhcuy",
+            "icon": "icon-GitHub"
+          },
+          {
+            "href": "https://nixgnauhcuy.cn/atom.xml",
+            "title": "Rss",
+            "icon": "icon-rss"
+          },
+          {
+            "href": "mailto:nixgnauhcuy@gmail.com",
+            "title": "Email@nixgnauhcuy@gmail.com",
+            "icon": "icon-envelope"
+          }
+        ]
       },
+      "card_whoami": "Nixgnauhcuy is an embedded software engineer from Shenzhen who approaches his interests with curiosity, constantly exploring uncharted territories.",
+      "card_author_infos": [
+        "🏠 ShenZhen, China",
+        "💼 Embedded Software Engineer",
+        "🌝 MBTI, INTP-T",
+        "❤️ Game, Music, Sleep in"
+      ],
       "card_wechat": {
         "en": true,
         "front_img": "",
         "back_img": ""
-      },
-      "card_author_infos": [
-        "📫 nixgnauhcuy@gmail.com",
-        "🏠 ShenZhen, China",
-        "💼 Embedded Software Engineer",
-        "🌝 MBTI, INTP-T"
-      ]
+      }
     },
     "right": {
       "title": "Hi, I'm nixgnauhcuy 👋",
       "subtitle": "This is my personal site.",
-      "social_icons": [
-        {
-          "href": "https://www.nixgnauhcuy.cn",
-          "title": "Blog",
-          "icon": "icon-blogger",
-          "img_alt": "Blog Icon"
-        },
-        {
-          "href": "https://github.com/nixgnauhcuy",
-          "title": "Github",
-          "icon": "icon-GitHub",
-          "img_alt": "Github Icon"
-        },
-        {
-          "href": "https://nixgnauhcuy.cn/atom.xml",
-          "title": "Rss",
-          "icon": "icon-rss",
-          "img_alt": "Rss Icon"
-        }
-      ],
+      "navigation": {
+        "en": true,
+        "sites": [
+          {
+            "name": "Github",
+            "icon": "icon-GitHub",
+            "url": "https://github.com/"
+          },
+          {
+            "name": "blog",
+            "icon": "icon-blogger",
+            "url": "https://www.nixgnauhcuy.cn/"
+          },
+          {
+            "name": "V2EX",
+            "icon": "icon-vex",
+            "url": "https://www.v2ex.com/"
+          },
+          {
+            "name": "sspai",
+            "icon": "icon-sspai",
+            "url": "https://sspai.com/"
+          }
+        ]
+      },
       "blog_archives": {
         "en": true,
         "list": [
@@ -155,10 +183,8 @@
           }
         ]
       },
-      "github_snake": {
-        "en": true,
-        "img": ""
-      }
+      "github_snake_url": "https://raw.githubusercontent.com/nixgnauhcuy/nixgnauhcuy/output/github-contribution-grid-snake.svg",
+      "mode_btn_en": true
     }
   }
 }

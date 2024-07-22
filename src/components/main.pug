@@ -43,6 +43,15 @@ main
       .title #{ config.right.title }
     if config.right.subtitle
       .subtitle #{ config.right.subtitle }
+    if config.right.navigation.en
+      .navigation-section
+        h1 Navigation
+        .navigation-cards
+          each site in config.right.navigation.sites
+            a(href=site.url, target="_blank")
+              .card
+                .card-icon(class=`iconfont ${site.icon}`)
+                .card-title #{ site.name }
     if config.right.blog_archives.en
       .blog-archives-section
         h1 Blog Archives
@@ -69,6 +78,7 @@ main
         i(class='iconfont icon-circle-half-stroke')
 
 canvas
+
 if config.canvas_webgl_fluid.en
   <script type="module" src='/js/webgl-fluid.js'></script>
 

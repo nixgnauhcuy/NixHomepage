@@ -88,6 +88,31 @@
     "right": {
       "title": "Hi, I'm nixgnauhcuy 👋",
       "subtitle": "This is my personal site.",
+      "navigation": {
+        "en": true,
+        "sites": [
+          {
+            "name": "Github",
+            "icon": "icon-GitHub",
+            "url": "https://github.com/"
+          },
+          {
+            "name": "blog",
+            "icon": "icon-blogger",
+            "url": "https://www.nixgnauhcuy.cn/"
+          },
+          {
+            "name": "V2EX",
+            "icon": "icon-vex",
+            "url": "https://www.v2ex.com/"
+          },
+          {
+            "name": "sspai",
+            "icon": "icon-sspai",
+            "url": "https://sspai.com/"
+          }
+        ]
+      },
       "blog_archives": {
         "en": true,
         "list": [

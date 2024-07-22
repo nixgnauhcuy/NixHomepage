@@ -19,8 +19,18 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+.iconfont {
+  font-size: 30px;
+  color: var(--base-background-color);
+  display: block;
+  margin: auto;
+}
+
 main {
-  margin: 10px auto;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -89,10 +99,6 @@ main {
   margin-top: -20px;
   display: flex;
   align-items: center;
-}
-
-.main-left .social-icons a {
-  text-decoration: none;
 }
 
 .main-left .social-icon {
@@ -218,16 +224,48 @@ main {
   font-size: 60px;
 }
 
+.main-right .navigation-cards .card,
 .main-right .blog-archives-section .timeline,
 .main-right .github-cards .card {
   border: var(--style-border);
 }
 
-.iconfont {
-  font-size: 30px;
-  color: var(--base-background-color);
-  display: block;
-  margin: auto;
+.main-right .navigation-cards {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+}
+
+.main-right .navigation-cards .card {
+  height: 70px;
+  background: var(--base-card-color);
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.main-right .navigation-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.main-right .navigation-cards .card-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  color: var(--base-font-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-right .navigation-cards .card-title {
+  font-size: 18px;
+  align-items: center;
+  text-align: center;
+  color: var(--base-font-color);
+  word-wrap: break-word;
+  margin-bottom: 10px;
 }
 
 .main-right .blog-archives-section .timeline {
@@ -262,10 +300,6 @@ main {
   top: 8px;
 }
 
-.main-right .blog-archives-section .timeline .timeline-item a {
-  text-decoration: none;
-}
-
 .main-right .blog-archives-section .timeline .timeline-item a h3 {
   margin: 0;
   font-size: 18px;
@@ -296,10 +330,6 @@ main {
 
 .main-right .github-cards .card::-webkit-scrollbar {
   display: none;
-}
-
-.main-right .github-cards .card a {
-  text-decoration: none;
 }
 
 .main-right .github-cards .card:hover {
@@ -352,7 +382,31 @@ canvas {
 
 .canvas-gradient {
   background-color: hsla(197, 92%, 60%, 1);
-  background-image: radial-gradient(circle at 96% 96%, hsla(55.36363636363636, 93%, 54%, 0.85) 5%, transparent 86%), radial-gradient(circle at 5% 90%, hsla(229, 71%, 68%, 1) 13%, transparent 65%), radial-gradient(circle at 57% 73%, hsla(308, 93%, 51%, 1) 3%, transparent 89%), radial-gradient(circle at 20% 4%, hsla(318, 60%, 76%, 1) 22%, transparent 56%), radial-gradient(circle at 74% 15%, hsla(324, 92%, 59%, 1) 13%, transparent 57%);
+  background-image: radial-gradient(
+      circle at 96% 96%,
+      hsla(55.36363636363636, 93%, 54%, 0.85) 5%,
+      transparent 86%
+    ),
+    radial-gradient(
+      circle at 5% 90%,
+      hsla(229, 71%, 68%, 1) 13%,
+      transparent 65%
+    ),
+    radial-gradient(
+      circle at 57% 73%,
+      hsla(308, 93%, 51%, 1) 3%,
+      transparent 89%
+    ),
+    radial-gradient(
+      circle at 20% 4%,
+      hsla(318, 60%, 76%, 1) 22%,
+      transparent 56%
+    ),
+    radial-gradient(
+      circle at 74% 15%,
+      hsla(324, 92%, 59%, 1) 13%,
+      transparent 57%
+    );
   background-blend-mode: normal, normal, normal, normal, normal;
 }
 
@@ -404,6 +458,7 @@ canvas {
     font-size: 60px;
   }
 
+  .main-right .navigation-cards,
   .main-right .blog-archives-section .timeline,
   .main-right .github-cards,
   .main-right .github-snake-img {

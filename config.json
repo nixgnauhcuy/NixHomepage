@@ -7,7 +7,11 @@
     "author": "nixgnauhcuy",
     "keywords": ["nixgnauhcuy", "homepage"],
     "language": "en-US",
-    "favicon": "/assets/favicon.png"
+    "favicon": "/assets/favicon.png",
+    "font_family": {
+      "name": "ink-free", 
+      "url": "/assets/ink-free.ttf"
+    }
   },
   "config": {
     "canvas_gradient": false,

@@ -15,8 +15,11 @@
   },
   "config": {
     "canvas_gradient": false,
+    "canvas_webpbv_fluid": {
+      "en": true
+    },
     "canvas_webgl_fluid": {
-      "en": true,
+      "en": false,
       "settings": {
         "SIM_RESOLUTION": 128,
         "DYE_RESOLUTION": 1024,

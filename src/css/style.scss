@@ -23,8 +23,8 @@ a {
 }
 
 .iconfont {
-  font-size: 30px;
-  color: var(--base-background-color);
+  font-size: 25px;
+  color: var(--social-icon-font-color);
   display: block;
   margin: auto;
 }
@@ -110,7 +110,7 @@ main {
   border-radius: 10px;
   display: flex;
   margin-left: 10px;
-  background: var(--social-icon-color);
+  background: var(--social-icon-background-color);
   align-items: center;
   justify-content: center;
   transition: all 1s
@@ -178,7 +178,7 @@ main {
   justify-content: center;
   align-items: center;
   perspective: 1000;
-  background-color: var(--card-wechar-background-color);
+  background-color: var(--card-wechat-background-color);
 }
 
 .main-left .card#card-wechat:hover .flip-content {
@@ -291,7 +291,6 @@ main {
   content: "";
   width: 10px;
   height: 10px;
-  background: var(--social-icon-color);
   border: 1px solid #999;
   border-radius: 50%;
   position: absolute;

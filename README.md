@@ -14,11 +14,17 @@
 
 ![](/docs/img/img2.png)
 
+![](/docs/img/img3.png)
+
+![](/docs/img/img4.png)
+
 ## :gear: Features
 
 - [x] Multi-platform compatibility
 - [x] Light/Dark mode switch
 - [x] [WebGL-Fluid](https://github.com/AYJCSGM/WebGL-Fluid-Simulation/tree/master) background effect support
+- [x] [WebPbv-Fluid](https://github.com/kotsoft/particle_based_viscoelastic_fluid/tree/main) background effect support
+- [x] Gradient background
 
 ## :rocket: Quick Start
 
@@ -49,6 +55,10 @@ Running the command `npm run debug` and then visiting `http://localhost:3000` wi
 ## :gear: Config
 
 Edit the `config.js` file to customize and modify the content to be displayed. It offers a high degree of flexibility, so feel free to explore.
+
+[WebGL-Fluid-Simulation](https://ayjcsgm.github.io/WebGL-Fluid-Simulation/)
+
+[WebPbv-Fluid-Simulation](https://kotsoft.github.io/particle_based_viscoelastic_fluid/)
 
 ## :mailbox_with_mail: Feedback and Contribution
 

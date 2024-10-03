@@ -16,7 +16,23 @@
   "config": {
     "canvas_gradient": false,
     "canvas_webpbv_fluid": {
-      "en": true
+      "en": true,
+      "settings": {
+        "REST_DENSITY": 4,
+        "STIFFNESS": 0.5,
+        "NEAR_STIFFNESS": 0.5,
+        "KERNEL_RADIUS": 45,
+        "PLASTICITY": 0.5,
+        "YIELD_RATIO": 0.25,
+        "MIN_SPRING_DIST_RADIO": 0.25,
+        "LINEAR_VISCOSITY": 0.0,
+        "QUADRATIC_VISCOSITY": 0.1,
+        "POINT_SIZE": 5,
+        "GRAVITY_X": 0.0,
+        "GRAVITY_Y": 0.5,
+        "TIME_STEP": 1.0,
+        "SPRING_STIFFNESS": 0.0
+      }
     },
     "canvas_webgl_fluid": {
       "en": false,

@@ -1,3 +1,6 @@
+const config_fs = /* CONFIG_PLACEHOLDER */;
+let config = config_fs.config.canvas_webpbv_fluid.settings;
+
 class Particle {
   constructor(posX, posY, velX, velY) {
     this.posX = posX;
@@ -25,26 +28,23 @@ function moveParticleData(dst, src) {
 }
 
 class Material {
-  constructor(name, restDensity, stiffness, nearStiffness, kernelRadius) {
-    this.name = name;
+  constructor(restDensity, stiffness, nearStiffness, kernelRadius) {
     this.restDensity = restDensity;
     this.stiffness = stiffness;
     this.nearStiffness = nearStiffness;
     this.kernelRadius = kernelRadius;
-    this.pointSize = 5;
-    this.gravX = 0.0;
-    this.gravY = 0.5;
-    this.dt = 1;
+    this.pointSize = config.POINT_SIZE;
+    this.gravX = config.GRAVITY_X;
+    this.gravY = config.GRAVITY_Y;
+    this.dt = config.TIME_STEP;
 
-    this.springStiffness = 0.0;
-    this.plasticity = 0.5; // alpha
-    this.yieldRatio = 0.25; // gamma
-    this.minDistRatio = .25; // prevents the springs from getting too short
+    this.springStiffness = config.SPRING_STIFFNESS;
+    this.plasticity = config.PLASTICITY; // alpha
+    this.yieldRatio = config.YIELD_RATIO; // gamma
+    this.minDistRatio = config.MIN_SPRING_DIST_RADIO; // prevents the springs from getting too short
 
-    this.linViscosity = 0.0;
-    this.quadViscosity = 0.1;
-
-    this.maxPressure = 1;
+    this.linViscosity = config.LINEAR_VISCOSITY;
+    this.quadViscosity = config.QUADRATIC_VISCOSITY;
   }
 }
 
@@ -95,13 +95,10 @@ class Simulator {
 
     this.particleListNextIdx = []; // Same size as particles list, each points to next particle in bucket list
 
-    this.material = new Material("water", 4, 0.5, 0.5, 40);
+    this.material = new Material(config.REST_DENSITY, config.STIFFNESS,config.NEAR_STIFFNESS, config.KERNEL_RADIUS);
 
     this.springHash = {};
   }
-
-  start() { this.running = true; }
-  pause() { this.running = false; }
 
   resize(width, height) {
     this.width = width;
@@ -171,11 +168,11 @@ class Simulator {
 
     ctx.translate(-.5 * pointSize, -.5 * pointSize);
 
-    ctx.fillStyle = "#00CC00";
+    ctx.fillStyle = "#0000CC";
 
     for (let p of this.particles) {
       const speed = (p.velX * p.velX + p.velY * p.velY) * 2;
-      ctx.fillStyle = `rgb(${speed}, 255, 0)`;
+      ctx.fillStyle = `rgb(${speed}, 100, 255)`;
 
       ctx.fillRect(p.posX, p.posY, pointSize, pointSize);
     }

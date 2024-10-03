@@ -16,7 +16,7 @@
   "config": {
     "canvas_gradient": false,
     "canvas_webpbv_fluid": {
-      "en": true,
+      "en": false,
       "settings": {
         "REST_DENSITY": 4,
         "STIFFNESS": 0.5,
@@ -35,7 +35,7 @@
       }
     },
     "canvas_webgl_fluid": {
-      "en": false,
+      "en": true,
       "settings": {
         "SIM_RESOLUTION": 128,
         "DYE_RESOLUTION": 1024,

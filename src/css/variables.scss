@@ -2,20 +2,22 @@
   --base-background-color: rgba(21, 21, 21, 1);
   --base-card-color: rgba(31, 31, 31, 0.7);
   --base-font-color: rgba(241, 241, 241, 1);
-  --social-icon-color: rgba(241, 241, 241, 1);
+  --social-icon-background-color: rgba(31, 31, 31, 0.7);
+  --social-icon-font-color: rgba(241, 241, 241, 1);
 
   --card-border: #313131;
   --style-border: 1px solid var(--card-border);
-  --card-wechar-background-color: rgba(31, 31, 31, 0.7);
+  --card-wechat-background-color: rgba(31, 31, 31, 0.7);
 }
 
 .light-mode {
-  --base-background-color: rgba(247, 249, 254, 1);
-  --base-card-color: rgba(255, 255, 255, 1);
+  --base-background-color: rgba(234, 234, 234, 1);
+  --base-card-color: rgba(223, 223, 223, 0.7);
   --base-font-color: rgba(14, 14, 14, 1);
-  --social-icon-color: rgba(14, 14, 14, 1);
+  --social-icon-background-color: rgba(223, 223, 223, 0.7);
+  --social-icon-font-color: rgba(14, 14, 14, 1);
 
-  --card-border: #e3e8f7;
+  --card-border: #e0e0e0;
   --style-border: 1px solid var(--card-border);
-  --card-wechar-background-color: rgba(87, 189, 106, 0.7);
+  --card-wechat-background-color: rgba(87, 189, 106, 0.7);
 }
